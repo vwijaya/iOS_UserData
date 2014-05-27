@@ -21,6 +21,11 @@
 		09F60AA11932D070001104A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F60A831932D070001104A1 /* UIKit.framework */; };
 		09F60AA91932D070001104A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09F60AA71932D070001104A1 /* InfoPlist.strings */; };
 		09F60AAB1932D070001104A1 /* User_Data_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F60AAA1932D070001104A1 /* User_Data_ChallengeTests.m */; };
+		09F60AB61932D0A9001104A1 /* VWUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F60AB51932D0A9001104A1 /* VWUserData.m */; };
+		09F60ABC1932D344001104A1 /* person1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 09F60AB81932D344001104A1 /* person1.jpeg */; };
+		09F60ABD1932D344001104A1 /* person2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 09F60AB91932D344001104A1 /* person2.jpeg */; };
+		09F60ABE1932D344001104A1 /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F60ABA1932D344001104A1 /* person3.jpg */; };
+		09F60ABF1932D344001104A1 /* person4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 09F60ABB1932D344001104A1 /* person4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		09F60AA61932D070001104A1 /* User Data ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "User Data ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		09F60AA81932D070001104A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09F60AAA1932D070001104A1 /* User_Data_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_Data_ChallengeTests.m; sourceTree = "<group>"; };
+		09F60AB41932D0A9001104A1 /* VWUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWUserData.h; sourceTree = "<group>"; };
+		09F60AB51932D0A9001104A1 /* VWUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWUserData.m; sourceTree = "<group>"; };
+		09F60AB81932D344001104A1 /* person1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person1.jpeg; sourceTree = "<group>"; };
+		09F60AB91932D344001104A1 /* person2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person2.jpeg; sourceTree = "<group>"; };
+		09F60ABA1932D344001104A1 /* person3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person3.jpg; sourceTree = "<group>"; };
+		09F60ABB1932D344001104A1 /* person4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person4.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,7 @@
 		09F60A851932D070001104A1 /* User Data Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				09F60AB71932D0CE001104A1 /* Model */,
 				09F60A8E1932D070001104A1 /* VWAppDelegate.h */,
 				09F60A8F1932D070001104A1 /* VWAppDelegate.m */,
 				09F60A911932D070001104A1 /* Main.storyboard */,
@@ -126,6 +138,10 @@
 		09F60A861932D070001104A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				09F60AB81932D344001104A1 /* person1.jpeg */,
+				09F60AB91932D344001104A1 /* person2.jpeg */,
+				09F60ABA1932D344001104A1 /* person3.jpg */,
+				09F60ABB1932D344001104A1 /* person4.jpeg */,
 				09F60A871932D070001104A1 /* User Data Challenge-Info.plist */,
 				09F60A881932D070001104A1 /* InfoPlist.strings */,
 				09F60A8B1932D070001104A1 /* main.m */,
@@ -150,6 +166,15 @@
 				09F60AA71932D070001104A1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09F60AB71932D0CE001104A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09F60AB41932D0A9001104A1 /* VWUserData.h */,
+				09F60AB51932D0A9001104A1 /* VWUserData.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +254,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F60ABE1932D344001104A1 /* person3.jpg in Resources */,
+				09F60ABC1932D344001104A1 /* person1.jpeg in Resources */,
 				09F60A981932D070001104A1 /* Images.xcassets in Resources */,
 				09F60A8A1932D070001104A1 /* InfoPlist.strings in Resources */,
+				09F60ABF1932D344001104A1 /* person4.jpeg in Resources */,
 				09F60A931932D070001104A1 /* Main.storyboard in Resources */,
+				09F60ABD1932D344001104A1 /* person2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F60A961932D070001104A1 /* VWViewController.m in Sources */,
+				09F60AB61932D0A9001104A1 /* VWUserData.m in Sources */,
 				09F60A8C1932D070001104A1 /* main.m in Sources */,
 				09F60A901932D070001104A1 /* VWAppDelegate.m in Sources */,
 			);

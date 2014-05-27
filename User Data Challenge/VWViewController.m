@@ -7,6 +7,7 @@
 //
 
 #import "VWViewController.h"
+#import "VWUserData.h"
 
 @interface VWViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //NSArray *usersArray = [VWUserData users];
+    //NSLog(@"%@", usersArray);
+    
+    self.users = [VWUserData users];
+    NSLog(@"%@", self.users);
+
 }
 
 - (void)didReceiveMemoryWarning
