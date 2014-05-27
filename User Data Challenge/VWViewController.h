@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VWViewController : UIViewController
+@interface VWViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong,nonatomic) NSArray *users;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -24,7 +24,10 @@
     //NSLog(@"%@", usersArray);
     
     self.users = [VWUserData users];
-    NSLog(@"%@", self.users);
+    //NSLog(@"%@", self.users);
+    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
 
 }
 
@@ -32,6 +35,24 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.users count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"userCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    NSDictionary *user = self.users[indexPath.row];
+    cell.textLabel.text = user[USER_NAME];
+    cell.detailTextLabel.text = user[USER_EMAIL];
+    cell.imageView.image = user[USER_PROFILE_PIC];
+    
+    return cell;
 }
 
 @end
